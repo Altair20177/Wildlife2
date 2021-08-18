@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Wildlife 2</title>
+</head>
+<body>
+    <section class="fox">
+        <div class="container">
+            <header>
+                <div class="logo">
+                    <div class="logo__img">
+                        <img src="assets/logo.svg" alt="логотип">
+                    </div>
+                    <div class="logo__text">Wildlife</div>
+                </div>
+                <div class="burger">
+                    <span></span>
+                </div>
+                <ul class="nav__header nav">
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Contacts</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="fox__search" src="assets/loop.svg" alt="лупа">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="fox__signIn">Sign in</a>
+                    </li>
+                </ul>
+            </header>
+            <ul class="nav nav__mobile nonactive">
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">Contacts</a>
+                </li>
+                <li>
+                    <a class="search" href="#">
+                        <input type="search" class="search-input">
+                        <button class="search-btn" type="button">Search</button>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="fox__signIn">Sign in</a>
+                </li>
+            </ul>
+            <h2 class="fox__header">Survival</h2>
+            <p class="fox__content">
+                What this means is that we exist to help protect our environment and do in numbers of ways. You can save the planet by donation.
+            </p>
+            <button class="fox__btn">Donate</button>
+        </div>
+    </section>
+    <section class="animals">
+        <div class="container">
+            <h2 class="animals__header">Latest articles</h2>
+            <p class="animals__text">Breaking news from the wild</p>
+            <div class="animals__btns">
+                <button class="arrow__left"><img src="assets/arrow left.svg" alt=""></button>
+                <button class="arrow__right"><img src="assets/arrow right.svg" alt=""></button>
+            </div>
+            <div class="animals__cards">
+                <button class="arrow__left"><img src="assets/arrow left.svg" alt=""></button>
+                <a href="#" class="animals__card first__card">
+                    <h3 class="animals__card-header">Deer</h3>
+                    <p class="animals__card-text">Naturalist investigation</p>
+                </a>
+                <a href="#" class="animals__card second__card">
+                    <h3 class="animals__card-header">Squirrel</h3>
+                    <p class="animals__card-text">Kamikaze squirrels</p>
+                </a>
+                <a href="#" class="animals__card third__card">
+                    <h3 class="animals__card-header">Bird</h3>
+                    <p class="animals__card-text">Birds Fight club</p>
+                </a>
+                <button class="arrow__right"><img src="assets/arrow right.svg" alt=""></button>
+            </div>
+            <h3 class="animals__header-form">
+                Get notified about new amazing articles
+            </h3>
+            <form action="send">
+                <input type="email" class="email-input" placeholder="Email">
+                <button type="button" class="email-btn">Send</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <header>
+                <div class="wrapper">
+                    <div class="logo">
+                        <div class="logo__img">
+                            <img src="assets/logo.svg" alt="логотип">
+                        </div>
+                        <div class="logo__text">Wildlife</div>
+                    </div>
+                    <ul class="nav__footer nav">
+                        <li>
+                            <a href="#">Articles</a>
+                        </li>
+                        <li>
+                            <a href="#">About us</a>
+                        </li>
+                        <li>
+                            <a href="#">Learn more</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social-icons">
+                    <a href="#" class="facebook"></a>
+                    <a href="#" class="insta"></a>
+                    <a href="#" class="pinterest"></a>
+                    <a href="#" class="telega"></a>
+                </div>
+            </header>
+        </div>
+    </footer>
+    <div class="popup-back"></div>
+    <div class="popup">
+        <div class="popup__header">
+            <div class="popup__header-logo">
+                <img src="assets/logo for popup.svg" alt="">
+            </div>
+            <div class="popup__header-title">
+                <span>Authorization</span>
+            </div>
+            <div class="popup__header-close"></div>
+        </div>
+        <div class="popup__body">
+            <form class="registration" action="registration">
+                <div class="popup__registration">
+                    <div class="popup__without-social-media">
+                        <div class="popup__body-email">
+                            <label for="email">Input your Email here:</label>
+                            <input type="email" placeholder="Email"/>
+                        </div>
+                        <div class="popup__body-password">
+                            <label for="password">Input your Password here:</label>
+                            <input type="password" placeholder="Password"/>
+                        </div>
+                    </div>
+                    <div class="popup__social-media">
+                        <label for="social-media">Sign in with:</label>
+                        <div class="popup__first-row">
+                            <a href="#" class="popup-twitter"><img class="social-media" src="img/twitter.png" alt=""></a>
+                            <a href="#" class="popup-facebook"><img class="social-media" src="img/facebook.png" alt=""></a>
+                        </div>
+                        <div class="popup__second-row">
+                            <a href="#" class="popup-instagram"><img class="social-media" src="img/instagram.png" alt=""></a>
+                            <a href="#" class="popup-vk"><img class="social-media" src="img/vk.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup__body-btns">
+                    <button type="button" class="fox__signIn popup-btn">Sign in</button>
+                    <p>OR</p>
+                    <button type="button" class="fox__signIn popup-btn-reg">Sign up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
