@@ -490,7 +490,7 @@ header {
 }
 
 footer {
-  background-image: url("img/footer.png");
+  background-image: url("../img/Footer.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
