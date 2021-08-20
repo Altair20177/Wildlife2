@@ -546,14 +546,14 @@ footer header{
     .popup__body-btns{
         display: flex;
         align-items: center;
-        width: 50%;
+        width: 330px;
         margin: 0 auto;
         margin-top: 80px;
         justify-content: space-between;
         p{
             font-size: 20px;
             color: black;
-
+            padding: 0 20px;
         }
         .popup-btn-reg{
             font-size: 20px;
@@ -669,9 +669,19 @@ footer header{
     .fox header{
         margin-bottom: 30px;
     }
+    .popup__body .popup__body-btns{
+        align-items: center;
+        width: 306px;
+        p{
+            padding: 0 10px;
+        }
+    }
 }
 
 @media (max-width: 860px){
+    .fox__content{
+        width: 90%;
+    }
     .wrapper{
         display: block;
         .logo{
@@ -686,5 +696,36 @@ footer header{
     }
     footer header{
         padding: 70px 0;
+    }
+    .popup__registration{
+        flex-direction: column;
+        align-items: center;
+        .popup__social-media{
+            margin-top: 30px;
+        }
+        .popup__without-social-media{
+            width: 100%;
+            label{
+                width: auto;
+                display: inline;
+            }
+        }
+    }
+    .popup__header-logo{
+        display: none;
+    }
+    .popup__header-title{
+        padding-left: 20px;
+    }
+    .popup__body .popup__body-btns{
+        align-items: center;
+        width: 270px;
+        p{
+            padding: 0 10px;
+        }
+        .fox__signIn{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
     }
 }
