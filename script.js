@@ -3,7 +3,8 @@ const mobileMenu = document.querySelector('.nav__mobile');
 
 const popupBack = document.querySelector('.popup-back');
 const popup = document.querySelector('.popup');
-const openPopup = document.querySelector('.fox__signIn');
+const openPopup = document.querySelectorAll('.nav .fox__signIn');
+//const openPopup = document.querySelector('.fox__signIn');
 const closePopup1 = document.querySelector('.popup__header-close');
 const closePopup2 = document.querySelectorAll('.popup .fox__signIn');
 
@@ -11,16 +12,26 @@ const closePopup2 = document.querySelectorAll('.popup .fox__signIn');
 mobileBurger.addEventListener('click', openMenu);
 
 function openMenu(){
-    mobileMenu.classList.toggle('active');
+    mobileMenu.classList.toggle('nonactive');
     mobileBurger.classList.toggle('active');
 };
 /* Burger */
 
 /* Popup */
-openPopup.addEventListener('click', () => {
+
+for (let open of openPopup){
+    open.addEventListener('click', openPopupMenu);
+}
+
+function openPopupMenu(){
     popupBack.classList.add('active');
     popup.classList.add('active');
-});
+}
+
+/* openPopup.addEventListener('click', () => {
+    popupBack.classList.add('active');
+    popup.classList.add('active');
+}); */
 
 closePopup1.addEventListener('click', closePopupMenu);
 

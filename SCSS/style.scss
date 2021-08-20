@@ -59,7 +59,7 @@ header{
 }
 
 .nav__mobile{
-    display: none;
+    display: block;
     transition: all 0.3s linear 0s;
     li{
         margin-bottom: 20px;
@@ -566,7 +566,6 @@ footer header{
 }
 
 .nonactive{
-    opacity: 0;
     display: none;
     transition: linear 0.3s;
 }
