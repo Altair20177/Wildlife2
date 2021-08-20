@@ -711,6 +711,11 @@ footer header{
             }
         }
     }
+
+    .popup{
+        width: 500px;
+        margin-top: 50px;
+    }
     .popup__header-logo{
         display: none;
     }
@@ -733,6 +738,33 @@ footer header{
 
 @media (max-width: 640px){
     .popup{
-        width: 90%;
+        width: 305px;
+        margin-top: 30px;
+    }
+    .animals form{
+        flex-direction: column;
+    }
+    .email-input{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .email-btn{
+        border-radius: 5px;
+    }
+    .nav__mobile{
+        width: 100%;
+        .search{
+            width: 90%;
+            flex-direction: column;
+            .search-input{
+                width: 100%;
+                margin-bottom: 30px;
+                border-radius: 5px;
+            }
+            .search-btn{
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+        }
     }
 }
