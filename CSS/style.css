@@ -155,7 +155,7 @@ header {
 }
 
 .nav__mobile {
-  display: none;
+  display: block;
   -webkit-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
@@ -790,7 +790,6 @@ footer header {
 }
 
 .nonactive {
-  opacity: 0;
   display: none;
   -webkit-transition: linear 0.3s;
   transition: linear 0.3s;
