@@ -966,6 +966,7 @@ footer header {
         -ms-flex-align: center;
             align-items: center;
     width: 270px;
+    margin-top: 20px;
   }
   .popup__body .popup__body-btns p {
     padding: 0 10px;
@@ -973,5 +974,11 @@ footer header {
   .popup__body .popup__body-btns .fox__signIn {
     padding-left: 15px;
     padding-right: 15px;
+  }
+}
+
+@media (max-width: 640px) {
+  .popup {
+    width: 90%;
   }
 }
