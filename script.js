@@ -1,3 +1,19 @@
+new Swiper('.animals__cards',{
+    navigation:{
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination:{
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    simulateTouch:false,
+});
+
+
+
+
+
 const mobileBurger = document.querySelector('.burger');
 const mobileMenu = document.querySelector('.nav__mobile');
 

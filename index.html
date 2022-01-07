@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <title>Wildlife 2</title>
 </head>
 <body>
@@ -67,25 +68,26 @@
         <div class="container">
             <h2 class="animals__header">Latest articles</h2>
             <p class="animals__text">Breaking news from the wild</p>
-            <div class="animals__btns">
-                <button class="arrow__left"><img src="assets/arrow left.svg" alt=""></button>
-                <button class="arrow__right"><img src="assets/arrow right.svg" alt=""></button>
-            </div>
-            <div class="animals__cards">
-                <button class="arrow__left"><img src="assets/arrow left.svg" alt=""></button>
-                <a href="#" class="animals__card first__card">
-                    <h3 class="animals__card-header">Deer</h3>
-                    <p class="animals__card-text">Naturalist investigation</p>
-                </a>
-                <a href="#" class="animals__card second__card">
-                    <h3 class="animals__card-header">Squirrel</h3>
-                    <p class="animals__card-text">Kamikaze squirrels</p>
-                </a>
-                <a href="#" class="animals__card third__card">
-                    <h3 class="animals__card-header">Bird</h3>
-                    <p class="animals__card-text">Birds Fight club</p>
-                </a>
-                <button class="arrow__right"><img src="assets/arrow right.svg" alt=""></button>
+            <div class="animals__cards swiper">
+                <!-- <button class="arrow__left"><img src="assets/arrow left.svg" alt=""></button> -->
+                <div class="cards-slider swiper-wrapper">
+                    <div class="animals__card first__card swiper-slide">
+                        <h3 class="animals__card-header">Deer</h3>
+                        <p class="animals__card-text">Naturalist investigation</p>
+                    </div>
+                    <div class="animals__card second__card swiper-slide">
+                        <h3 class="animals__card-header">Squirrel</h3>
+                        <p class="animals__card-text">Kamikaze squirrels</p>
+                    </div>
+                    <div class="animals__card third__card swiper-slide">
+                        <h3 class="animals__card-header">Bird</h3>
+                        <p class="animals__card-text">Birds Fight club</p>
+                    </div>
+                </div>
+                <!-- <button class="arrow__right"><img src="assets/arrow right.svg" alt=""></button> -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
             </div>
             <h3 class="animals__header-form">
                 Get notified about new amazing articles
@@ -171,6 +173,7 @@
             </form>
         </div>
     </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

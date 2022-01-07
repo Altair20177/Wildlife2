@@ -377,6 +377,12 @@ header {
           justify-content: space-between;
 }
 
+.swiper-button-prev::after,
+.swiper-button-next::after{
+  color: white;
+  font-style: 80px;
+}
+
 .animals__btns {
   display: none;
 }
@@ -388,6 +394,14 @@ header {
   transition: linear 0.2s;
 }
 
+.swiper-wrapper{
+  padding: 40px 0;
+}
+
+.swiper-pagination{
+  padding-top: 10px;
+}
+
 .animals__card:hover {
   -webkit-transform: scale(1.045);
           transform: scale(1.045);
@@ -395,14 +409,20 @@ header {
 
 .first__card {
   background-image: url("../img/deer.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .second__card {
   background-image: url("../img/squirrel.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .third__card {
   background-image: url("../img/bird.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .animals__card-header {
